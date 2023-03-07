@@ -1,0 +1,497 @@
+:root {
+    --primary : #13472d ;
+    --bg : #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    text-decoration: none;
+    
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(85, 85, 85, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+   
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(1, 1, 1, 0.8);
+    padding: 1.3rem 7%;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid var(--primary);
+    z-index: 9999;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color:  whitesmoke;
+    
+}
+
+nav .logo span {
+    color:var(--primary);
+}
+
+
+
+nav .navbar-nav a {
+    color: whitesmoke;
+    padding: 0 0.5rem;
+    transform: scale(2);
+}
+
+nav .navbar-nav a:hover {
+    color: var(--primary);
+    transition: all .3s ease-in-out;
+    
+}
+
+
+
+nav .navbar-extra a {
+    color: whitesmoke;
+    padding: 0 0.5rem;
+    
+    
+}
+
+nav .navbar-extra a:hover {
+    color: var(--primary);
+    
+}
+
+#hamburger-menu {
+    display: none; 
+   }
+
+
+.hero {
+    background: url(../image/bg.jpg);
+    height: 100vh;
+   display: flex;
+   align-items: center;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
+}
+
+.content {
+    transition: 1s linear;
+  
+}
+.content h1{
+    width: 75%;
+    color: whitesmoke;
+    font-size: 2rem;
+   margin: 0 0 0 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    
+}
+
+.content span{
+    color: var(--primary);
+    
+}
+
+.content p {
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-size: 1rem;
+    margin: 0.5rem 0 0 3rem;
+    width: 70%;
+    color: whitesmoke;
+   
+}
+
+.content a {
+    color: whitesmoke;
+    margin: 1rem 0 0 3rem;
+    background-color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow:  0 0.25rem 0.25rem rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    display: inline-block;
+    animation: 0.3s linear;
+    
+}
+
+.beli-sekarang {
+    padding: 0;
+    margin-right: 0;
+}
+
+.beli-sekarang:hover{
+    filter: brightness(1.2);
+}
+
+/*audio*/ 
+
+.btnplay {
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    color: whitesmoke;
+
+}
+
+.btnplay:hover {
+    color: var(--primary);
+}
+
+/*bagian about*/ 
+.tentang {
+    padding: 8rem 7% 1.4rem;
+    
+}
+
+.tentang h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.tentang h1 span {
+    color: whitesmoke;
+  
+}
+
+.isikonten  {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.isikonten .img-about{
+    flex: 1 1 25rem;
+}
+.isikonten .img-about img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.isikonten .tulisankontent {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    color: whitesmoke;
+}
+
+.isikonten .tulisankontent p{
+    margin-bottom: 1rem;
+    
+}
+
+
+
+/*bagian menu*/ 
+
+.menukita h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    padding: 8rem 7% 1.4rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+.menukita h2 span {
+    color: var(--primary);
+}
+
+.menukita p {
+    color: whitesmoke;
+    text-align: center;
+   max-width: 30rem;
+   margin: auto;
+   line-height: 1.6;
+
+}
+
+.menukita .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.menukita .row .menu-card {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menukita .row .menu-card img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+.menukita .row .menu-card-title {
+    margin-top: 1rem auto 0.5rem;
+
+}
+
+.menukita .row .menu-card-buy {
+    background-color: var(--primary);
+    margin: 1rem auto 0;
+    width: 5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.2s linear;
+}
+
+.menukita .row .menu-card-buy a {
+    color: whitesmoke;
+}
+
+.menukita .row .menu-card-buy:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/*contact*/
+.contact2  h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    padding: 8rem 7% 1.4rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.contact2 p {
+    color: whitesmoke;
+    text-align: center;
+   max-width: 30rem;
+   margin: auto;
+   line-height: 1.6;
+}
+
+
+.contact2 .containercontact{
+    display: flex;
+    background-color: rgba(125, 125, 125, 0.5);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+.contact2 .containercontact .map {
+    flex: 1 1 35rem;
+   width: 80%;
+    object-fit: cover;
+}
+
+.contact2 .containercontact form {
+    flex: 1 1 35rem;
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+
+.contact2 .containercontact form .input-grup {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+    color: whitesmoke;
+}
+
+.contact2 .containercontact form .input-grup input {
+    background: none;
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: #fff;
+
+}
+
+.contact2 .containercontact form button {
+    margin-top:3rem ;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.contact2 .containercontact form button:hover {
+    filter: brightness(1.2)
+}
+
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 10rem;
+    color: whitesmoke;
+
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a i {
+    padding: 0 1rem;
+}
+
+footer .sosials {
+    padding: 1rem 0.2rem ;
+}
+
+
+/*media query*/ 
+/*laptop*/
+@media (max-width: 1366px) {
+    html {
+        font-size: 90%;
+    }
+    
+}
+   
+
+/*tablet*/ 
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+    
+    #hamburger-menu {
+        display: inline-block;
+        
+    }
+
+    nav .navbar-nav{
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        width: 25rem;
+        height: 100vh;
+        background-color: whitesmoke;
+        transition: 0.3s linear;
+        border-top: 1px var(--primary) solid;
+        text-decoration: underline;
+    }
+
+   nav .navbar-nav.active {
+        right: 0;
+        top: 100%;
+       
+    }
+
+    nav .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.2rem 1.2rem 2rem 1.2rem;
+        padding: 0.6rem;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .content h1{
+       margin: 0 0 0 2rem;
+    
+    }
+
+    .content p {
+        margin: 0.5rem 0 0 2rem;
+    }
+    
+    .content a {
+        margin: 1rem 0 0 2rem;     
+    }
+    
+    .isikonten  {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .isikonten .img-about img {
+        height: 24rem;
+        object-fit: cover;
+        margin-bottom: 2rem; 
+    }
+    
+    .menukita .row .menu-card {
+       width: 50%;
+
+}
+
+    .contact2 .containercontact {
+        flex-wrap: wrap;
+        
+    }
+
+    .contact2 .containercontact .map {
+        height: 30rem;
+        width: 100%;
+    }
+    
+    .contact2 .containercontact form {
+        padding-top: 0;
+    }
+
+    
+   
+/*phone*/ 
+@media (max-width: 450px) {
+    html {
+        font-size: 70%;
+    }
+
+}
+
+
+}
